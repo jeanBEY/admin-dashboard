@@ -12,6 +12,12 @@
     padding: 0;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 img {
     max-width: 45px;
     padding-right: 15px;
