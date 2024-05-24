@@ -19,13 +19,16 @@ img {
 
 .container {
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(auto-fit,minmax(150px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
 
     max-height: 100vh;
     max-width: 100vw;
+
+    background-color: #d1d5db; 
 }
 
+/************************* SIDEBAR (START) */
 .sidebar {
     display: grid;
     color: #f0f9ff;
@@ -41,29 +44,42 @@ img {
     display: flex;
     align-items: center;
     list-style-type: none;
-    grid-column: 1/2; 
-    grid-row: 1/7;
     padding: 2.5px;
 }
+/************************* SIDEBAR (end) */
 
+
+
+
+
+
+
+/************************* HEADER (START) */
 .header {
     display: grid;
     background-color: orange;
     grid-column: 2/6;
 }
+/************************* HEADER (end) */
 
+
+
+
+
+
+
+/************************* PROJECTS (START) */
 .projects {
     display: grid;
-    background-color: #d1d5db; 
     padding: 15px;
     grid-column: 2/5;
-    grid-row: 2/6;
 }
 
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    padding-top: 10px;
 }
 
 .projects .title {
@@ -83,7 +99,8 @@ img {
 .projects ul {
     display: flex;
     justify-content: flex-end;
-    padding-right: 30px;
+    padding-right: 20px;
+    padding-bottom: 15px;
 }
 
 .projects li {
@@ -99,17 +116,57 @@ img {
     border-left-width: 7.5px;
     border-color: #fcd34d;
 }
+/************************* PROJECTS (end) */
 
+
+
+/************************* ANNOUNCEMENTS (START) */
 .announcements {
     display: grid;
-    background-color: pink; 
+    background-color: #d1d5db; 
+    padding: 15px;
     grid-column: 5/6;
     grid-row: 2/4;
 }
 
+.announcements-container {
+    display: grid;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px 0.5rem 10px 0.5rem;
+    margin-top: 10px;
+}
+
+.announcement .title {
+    font-weight: bold;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    font-size: 0.75rem;
+}
+
+.announcement p {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+    background-color: #FFFFFF;
+    color: darkgray;
+    font-size: 0.75rem;
+}
+
+.announcement {
+    border-bottom: 1px solid #d1d5db;
+}
+/************************* ANNOUNCEMENTS (end) */
+
+
+
+/************************* TRENDING (START) */
 .trending {
     display: grid;
     background-color: violet; 
     grid-column: 5/6;
     grid-row: 4/6;
 }
+/************************* TRENDING (end) */
